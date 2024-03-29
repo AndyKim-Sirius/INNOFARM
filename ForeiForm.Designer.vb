@@ -117,6 +117,7 @@ Partial Class ForeiForm
         '
         Me.Info_La0.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.Info_La0.Enabled = False
+        Me.Info_La0.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Info_La0.Font = New System.Drawing.Font("맑은 고딕", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Info_La0.ForeColor = System.Drawing.Color.Black
         Me.Info_La0.Location = New System.Drawing.Point(27, 20)

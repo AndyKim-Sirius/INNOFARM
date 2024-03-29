@@ -208,9 +208,7 @@
 
 
         If sender.text = "거래처정보" Then
-            DD = GetForm("INNOFARM", "customer")
-            Panel_Main.Controls.Add(DD)
-            DD.BringToFront()
+            customer.ShowDialog()
             Exit Sub
         End If
 

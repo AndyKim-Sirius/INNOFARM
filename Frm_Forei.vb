@@ -124,7 +124,7 @@ Public Class Frm_Forei
         StrSQL = "Select Fori_Code FROM SI_FOREI with(NOLOCK)  Order By Convert(Decimal,Fori_Code) Desc "
         Re_Count = DB_Select(DBT)
         If Re_Count = 0 Then
-            JP_Code = JP_Code & "202201"
+            JP_Code = JP_Code & "202101"
         Else
             JP_Code = Val(DBT.Rows(0).Item(0)) + 1
         End If
