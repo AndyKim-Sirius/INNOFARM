@@ -213,20 +213,20 @@ Partial Class Frm_Main
         '
         Me.Panel_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel_Main.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_Main.Location = New System.Drawing.Point(460, 135)
+        Me.Panel_Main.Location = New System.Drawing.Point(171, 29)
         Me.Panel_Main.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel_Main.Name = "Panel_Main"
-        Me.Panel_Main.Size = New System.Drawing.Size(811, 695)
+        Me.Panel_Main.Size = New System.Drawing.Size(1100, 801)
         Me.Panel_Main.TabIndex = 22
         '
         'Di_Panel5
         '
         Me.Di_Panel5.BackColor = System.Drawing.Color.DarkOrange
         Me.Di_Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Di_Panel5.Location = New System.Drawing.Point(460, 135)
+        Me.Di_Panel5.Location = New System.Drawing.Point(171, 29)
         Me.Di_Panel5.Margin = New System.Windows.Forms.Padding(0)
         Me.Di_Panel5.Name = "Di_Panel5"
-        Me.Di_Panel5.Size = New System.Drawing.Size(811, 0)
+        Me.Di_Panel5.Size = New System.Drawing.Size(1100, 0)
         Me.Di_Panel5.TabIndex = 21
         '
         'Panel_Tab_Menu
@@ -234,10 +234,10 @@ Partial Class Frm_Main
         Me.Panel_Tab_Menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel_Tab_Menu.Controls.Add(Me.Tab_Menu_Title_End)
         Me.Panel_Tab_Menu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel_Tab_Menu.Location = New System.Drawing.Point(460, 0)
+        Me.Panel_Tab_Menu.Location = New System.Drawing.Point(171, 0)
         Me.Panel_Tab_Menu.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel_Tab_Menu.Name = "Panel_Tab_Menu"
-        Me.Panel_Tab_Menu.Size = New System.Drawing.Size(811, 135)
+        Me.Panel_Tab_Menu.Size = New System.Drawing.Size(1100, 29)
         Me.Panel_Tab_Menu.TabIndex = 17
         Me.Panel_Tab_Menu.WrapContents = False
         '
@@ -276,7 +276,7 @@ Partial Class Frm_Main
         Me.Panel_Sub_Menu.Location = New System.Drawing.Point(46, 0)
         Me.Panel_Sub_Menu.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel_Sub_Menu.Name = "Panel_Sub_Menu"
-        Me.Panel_Sub_Menu.Size = New System.Drawing.Size(414, 830)
+        Me.Panel_Sub_Menu.Size = New System.Drawing.Size(125, 830)
         Me.Panel_Sub_Menu.TabIndex = 12
         '
         'Sub_Menu10
@@ -291,7 +291,7 @@ Partial Class Frm_Main
         Me.Sub_Menu10.Location = New System.Drawing.Point(5, 312)
         Me.Sub_Menu10.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu10.Name = "Sub_Menu10"
-        Me.Sub_Menu10.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu10.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu10.TabIndex = 28
         Me.Sub_Menu10.TabStop = False
         Me.Sub_Menu10.Text = "Sub-10"
@@ -310,7 +310,7 @@ Partial Class Frm_Main
         Me.Sub_Menu9.Location = New System.Drawing.Point(5, 281)
         Me.Sub_Menu9.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu9.Name = "Sub_Menu9"
-        Me.Sub_Menu9.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu9.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu9.TabIndex = 27
         Me.Sub_Menu9.TabStop = False
         Me.Sub_Menu9.Text = "Sub-9"
@@ -329,7 +329,7 @@ Partial Class Frm_Main
         Me.Sub_Menu8.Location = New System.Drawing.Point(5, 250)
         Me.Sub_Menu8.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu8.Name = "Sub_Menu8"
-        Me.Sub_Menu8.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu8.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu8.TabIndex = 26
         Me.Sub_Menu8.TabStop = False
         Me.Sub_Menu8.Text = "Sub-8"
@@ -348,7 +348,7 @@ Partial Class Frm_Main
         Me.Sub_Menu7.Location = New System.Drawing.Point(5, 219)
         Me.Sub_Menu7.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu7.Name = "Sub_Menu7"
-        Me.Sub_Menu7.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu7.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu7.TabIndex = 25
         Me.Sub_Menu7.TabStop = False
         Me.Sub_Menu7.Text = "Sub-7"
@@ -367,7 +367,7 @@ Partial Class Frm_Main
         Me.Sub_Menu6.Location = New System.Drawing.Point(5, 188)
         Me.Sub_Menu6.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu6.Name = "Sub_Menu6"
-        Me.Sub_Menu6.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu6.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu6.TabIndex = 24
         Me.Sub_Menu6.TabStop = False
         Me.Sub_Menu6.Text = "Sub-6"
@@ -386,7 +386,7 @@ Partial Class Frm_Main
         Me.Sub_Menu5.Location = New System.Drawing.Point(5, 157)
         Me.Sub_Menu5.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu5.Name = "Sub_Menu5"
-        Me.Sub_Menu5.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu5.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu5.TabIndex = 23
         Me.Sub_Menu5.TabStop = False
         Me.Sub_Menu5.Text = "Sub-5"
@@ -405,7 +405,7 @@ Partial Class Frm_Main
         Me.Sub_Menu4.Location = New System.Drawing.Point(5, 126)
         Me.Sub_Menu4.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu4.Name = "Sub_Menu4"
-        Me.Sub_Menu4.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu4.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu4.TabIndex = 22
         Me.Sub_Menu4.TabStop = False
         Me.Sub_Menu4.Text = "Sub-4"
@@ -424,7 +424,7 @@ Partial Class Frm_Main
         Me.Sub_Menu3.Location = New System.Drawing.Point(5, 95)
         Me.Sub_Menu3.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu3.Name = "Sub_Menu3"
-        Me.Sub_Menu3.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu3.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu3.TabIndex = 21
         Me.Sub_Menu3.TabStop = False
         Me.Sub_Menu3.Text = "Sub-3"
@@ -443,7 +443,7 @@ Partial Class Frm_Main
         Me.Sub_Menu2.Location = New System.Drawing.Point(5, 64)
         Me.Sub_Menu2.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu2.Name = "Sub_Menu2"
-        Me.Sub_Menu2.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu2.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu2.TabIndex = 20
         Me.Sub_Menu2.TabStop = False
         Me.Sub_Menu2.Text = "Sub-2"
@@ -462,7 +462,7 @@ Partial Class Frm_Main
         Me.Sub_Menu1.Location = New System.Drawing.Point(5, 33)
         Me.Sub_Menu1.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub_Menu1.Name = "Sub_Menu1"
-        Me.Sub_Menu1.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu1.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu1.TabIndex = 19
         Me.Sub_Menu1.TabStop = False
         Me.Sub_Menu1.Text = "Sub-1"
@@ -479,7 +479,7 @@ Partial Class Frm_Main
         Me.Di_Panel6.Location = New System.Drawing.Point(5, 2)
         Me.Di_Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Di_Panel6.Name = "Di_Panel6"
-        Me.Di_Panel6.Size = New System.Drawing.Size(403, 27)
+        Me.Di_Panel6.Size = New System.Drawing.Size(114, 27)
         Me.Di_Panel6.TabIndex = 18
         '
         'Com_HideMenu
@@ -489,7 +489,7 @@ Partial Class Frm_Main
         Me.Com_HideMenu.FlatAppearance.BorderSize = 0
         Me.Com_HideMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
         Me.Com_HideMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Com_HideMenu.Location = New System.Drawing.Point(377, 0)
+        Me.Com_HideMenu.Location = New System.Drawing.Point(88, 0)
         Me.Com_HideMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.Com_HideMenu.Name = "Com_HideMenu"
         Me.Com_HideMenu.Size = New System.Drawing.Size(26, 27)
@@ -508,7 +508,7 @@ Partial Class Frm_Main
         Me.Sub_Menu_Title.Location = New System.Drawing.Point(0, 0)
         Me.Sub_Menu_Title.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Sub_Menu_Title.Name = "Sub_Menu_Title"
-        Me.Sub_Menu_Title.Size = New System.Drawing.Size(403, 27)
+        Me.Sub_Menu_Title.Size = New System.Drawing.Size(114, 27)
         Me.Sub_Menu_Title.TabIndex = 16
         Me.Sub_Menu_Title.Text = "Title"
         Me.Sub_Menu_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

@@ -176,7 +176,7 @@
         Dim DD As Object = Nothing
 
 
-        StrSQL = "Select * From SI_SAWON With(NOLOCK), SI_MAN_Level With(NOLOCK) Where Man_Code = '" & Text_Man_Code.Text & "' And Man_Level =  Le_Code"
+        StrSQL = "Select * From SI_MAN With(NOLOCK), SI_MAN_Level With(NOLOCK) Where Man_Code = '" & Text_Man_Code.Text & "' And Man_Level =  Le_Code"
         Re_Count = DB_Select(DBT)
         If Re_Count <> 0 Then
             Pro_LE(1) = DBT.Rows(0)("Le_Level1").ToString
@@ -207,8 +207,8 @@
         '요기까지
 
 
-        If sender.text = "사용자정보" Then
-            DD = GetForm("INNOFARM", "Frm_Man")
+        If sender.text = "거래처정보" Then
+            DD = GetForm("INNOFARM", "customer")
             Panel_Main.Controls.Add(DD)
             DD.BringToFront()
             Exit Sub

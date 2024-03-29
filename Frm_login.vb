@@ -57,7 +57,7 @@ Public Class Frm_Login
         End If
 
         '프로그램 Check
-        Text_Man_Code.Text = "1001"
+        Text_Man_Code.Text = "23010"
         Text_Man_Pass.Text = "1363"
 
         Com_Can.Visible = False
@@ -70,9 +70,9 @@ Public Class Frm_Login
 
         Try
             '요기부터
-            If Text_Man_Code.Text = "" Or Text_Man_Code.Text = "1001" Then
+            If Text_Man_Code.Text = "" Or Text_Man_Code.Text = "23010" Then
                 Frm_Main.Show()
-                Frm_Main.Text_Man_Code.Text = "1001"
+                Frm_Main.Text_Man_Code.Text = "23010"
                 '               Frm_Main.Text_Man_Name.Text = "Master"
                 Me.Visible = False
                 Text_Man_Code.Text = ""
@@ -83,7 +83,7 @@ Public Class Frm_Login
             '요기까지
 
             '사원코드 검색
-            StrSQL = "Select Man_Code,Man_Name,Man_Pass FROM SI_SAWON with(NOLOCK)  Where Man_Code = '" & Text_Man_Code.Text & "'"
+            StrSQL = "Select Man_Code,Man_Name,Man_Pass FROM SI_MAN with(NOLOCK)  Where Man_Code = '" & Text_Man_Code.Text & "'"
             Re_Count = DB_Select(DBT)
             If Re_Count <> 0 Then
                 If Text_Man_Pass.Text = DBT.Rows(0)("Man_Pass").ToString Then
