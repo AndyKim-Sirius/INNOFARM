@@ -31,12 +31,6 @@ Public Class Frm_Forei
         Forei_Grid.Columns(0).Width = 20
         Forei_Grid.Columns(0).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
 
-
-        '       For i = 1 To Forei_Grid.ColumnCount - 1
-        '            Forei_Grid.Columns(i).Width = 100
-        '            Forei_Grid.Columns(i).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        '        Next i
-
         Forei_Grid.Columns(1).Width = 20
         Forei_Grid.Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         Forei_Grid.Columns(2).Width = 30
@@ -110,16 +104,10 @@ Public Class Frm_Forei
 
     End Sub
 
-    Private Sub Save_Com_Click(sender As Object, e As EventArgs) Handles Save_Com.Click
-
-
-    End Sub
-
     Private Sub Insert_Com_Click(sender As Object, e As EventArgs) Handles Insert_Com.Click
         '새로운 코드 추가
         Dim DBT As New DataTable
         Dim JP_Code As Long
-        Dim check As Integer
 
         StrSQL = "Select Fori_Code FROM SI_FOREI with(NOLOCK)  Order By Convert(Decimal,Fori_Code) Desc "
         Re_Count = DB_Select(DBT)
@@ -130,8 +118,10 @@ Public Class Frm_Forei
         End If
         ForeiForm.Info_Tx0.Text = JP_Code
 
+        ' 외국인정보 입력 화면 호출
         ForeiForm.ShowDialog()
-        If Foreiform.DialogResult = DialogResult.OK Then
+        '
+        If ForeiForm.DialogResult = DialogResult.OK Then
             Search_Com.PerformClick()
         Else
             Search_Com.PerformClick()
@@ -167,8 +157,8 @@ Public Class Frm_Forei
         StrSQL = StrSQL & "DELETE SI_FOREI Where Fori_Code = '" & Forei_Grid.Item(0, Forei_Grid.CurrentCell.RowIndex).Value & "'"
         Re_Count = DB_Execute()
 
-        ' Grid_Display()
-        ' Grid_Display_Ch = True
+        Grid_Display()
+        Grid_Display_Ch = True
 
     End Sub
 

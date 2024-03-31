@@ -49,34 +49,38 @@ Public Class ForeiForm
         If Re_Count = 0 Then
             StrSQL = "SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED "
             StrSQL = StrSQL & "Insert INTO SI_FOREI  Values ('" & Forei_1 & "',
-                                                             '" & Forei_2 & "',
+                                                             N'" & Forei_2 & "',
                                                              '" & Forei_3 & "',
-                                                             '" & Forei_4 & "',
+                                                             N'" & Forei_4 & "',
                                                              '" & Forei_5 & "',
                                                              '" & Forei_6 & "',
                                                              '" & Forei_7 & "',
                                                              '" & Forei_8 & "',
-                                                             '" & Forei_9 & "',
+                                                             N'" & Forei_9 & "',
                                                              '" & Forei_10 & "',
-                                                             '" & Forei_11 & "')"
+                                                             '" & Forei_11 & "',
+                                                             ' Null ',
+                                                             'Null')"
+            '" & Forei_11 & "')"
             Re_Count = DB_Execute()
+            MsgBox("저장 되었습니다")
         Else
             StrSQL = "SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED "
-            StrSQL = StrSQL & "update SI_FOREI set Fori_Han='" & Forei_2 & "',
+            StrSQL = StrSQL & "update SI_FOREI set Fori_Han=N'" & Forei_2 & "',
                                                    Fori_Eng='" & Forei_3 & "',
-                                                   Fori_Sex='" & Forei_4 & "',
+                                                   Fori_Sex=N'" & Forei_4 & "',
                                                    Fori_Passport='" & Forei_5 & "',
                                                    Fori_in_date='" & Forei_6 & "',
                                                    Fori_Kisuk='" & Forei_7 & "',
                                                    Fori_Kisuk_Pass='" & Forei_8 & "',
-                                                   Fori_Nation='" & Forei_9 & "',
+                                                   Fori_Nation=N'" & Forei_9 & "',
                                                    Fori_Dgin='" & Forei_10 & "',
                                                    Fori_Bigo='" & Forei_11 & "'
                                                    where Fori_Code='" & Forei_1 & "'"
             Re_Count = DB_Execute()
+            MsgBox("수정 저장 되었습니다")
         End If
 
-        MsgBox("저장되었습니다")
 
         Info_Tx0.Text = ""
         Info_Tx1.Text = ""
