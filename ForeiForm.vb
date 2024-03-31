@@ -58,9 +58,7 @@ Public Class ForeiForm
                                                              '" & Forei_8 & "',
                                                              '" & Forei_9 & "',
                                                              '" & Forei_10 & "',
-                                                             '" & Forei_11 & "',
-                                                             ' Null ',
-                                                              'Null')"
+                                                             '" & Forei_11 & "')"
             Re_Count = DB_Execute()
         Else
             StrSQL = "SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED "
@@ -107,18 +105,11 @@ Public Class ForeiForm
     End Sub
 
     Private Sub ComboBox2_Click(sender As Object, e As EventArgs) Handles ComboBox2.Click
-        Dim DBT As New DataTable
-        StrSQL = "Select Base_Name  FROM SI_BASE_CODE with(NOLOCK) Where Base_Sel = '국적' Order By Base_Name Desc"
-        Re_Count = DB_Select(DBT)
         ComboBox2.Items.Clear()
-        If Re_Count <> 0 Then
-            For i = 0 To Re_Count - 1
-                ComboBox2.Items.Add(DBT.Rows(i).Item(0))
-            Next i
-        End If
-    End Sub
-
-    Private Sub Info_Tx2_TextChanged(sender As Object, e As EventArgs) Handles Info_Tx2.TextChanged
+        ComboBox2.Items.Add("태국")
+        ComboBox2.Items.Add("캄보디아")
+        ComboBox2.Items.Add("네팔")
 
     End Sub
+
 End Class

@@ -49,8 +49,10 @@ Partial Class ForeiForm
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownHeight = 50
         Me.ComboBox1.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.IntegralHeight = False
         Me.ComboBox1.Location = New System.Drawing.Point(203, 115)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(137, 28)
@@ -269,8 +271,10 @@ Partial Class ForeiForm
         '
         'ComboBox2
         '
+        Me.ComboBox2.DropDownHeight = 70
         Me.ComboBox2.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.IntegralHeight = False
         Me.ComboBox2.Location = New System.Drawing.Point(203, 340)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(137, 28)
@@ -292,7 +296,6 @@ Partial Class ForeiForm
         Me.Info_Tx7.Name = "Info_Tx7"
         Me.Info_Tx7.Size = New System.Drawing.Size(478, 25)
         Me.Info_Tx7.TabIndex = 269
-        Me.Info_Tx7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'IN_Date
         '
