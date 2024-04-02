@@ -112,6 +112,12 @@
     <Compile Include="ForeiForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_Customer.Designer.vb">
+      <DependentUpon>Frm_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Customer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Frm_Forei.Designer.vb">
       <DependentUpon>Frm_Forei.vb</DependentUpon>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ForeiForm.resx">
       <DependentUpon>ForeiForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Customer.resx">
+      <DependentUpon>Frm_Customer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Forei.resx">
       <DependentUpon>Frm_Forei.vb</DependentUpon>
