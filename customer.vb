@@ -10,8 +10,8 @@ Public Class customer
         Info_La5.Enabled = False
         Info_La6.Enabled = False
         Info_La7.Enabled = False
-        Info_La8.Enabled = False
         Info_La9.Enabled = False
+        Info_La10.Enabled = False
 
         Dim DBT As New DataTable
         Label1.Visible = False
@@ -45,8 +45,8 @@ Public Class customer
                 Info_Tx5.Text = DBT.Rows(0)("CM_Leader")                  ' 대표자 이름
                 Info_Tx6.Text = DBT.Rows(0)("CM_Add")                     ' 주소
                 Info_Tx7.Text = DBT.Rows(0)("CM_Man_Name")                ' 담당자 이름
-                Info_Tx8.Text = DBT.Rows(0)("CM_Man_Email")               ' 담당자 이메일
-                Info_Tx9.Text = DBT.Rows(0)("CM_Bigo")                    ' 비고
+                Info_Tx9.Text = DBT.Rows(0)("CM_Man_Email")               ' 담당자 이메일
+                Info_Tx10.Text = DBT.Rows(0)("CM_Bigo")                    ' 비고
             End If
         End If
 
@@ -82,8 +82,8 @@ Public Class customer
                                                                    '" & Info_Tx5.Text & "', 
                                                                    '" & Info_Tx6.Text & "',
                                                                    '" & Info_Tx7.Text & "', 
-                                                                   '" & Info_Tx8.Text & "', 
-                                                                   '" & Info_Tx9.Text & "')"
+                                                                   '" & Info_Tx9.Text & "', 
+                                                                   '" & Info_Tx10.Text & "')"
                 Re_Count = DB_Execute()
                 MsgBox("저장되었습니다")
             Catch ex As Exception
@@ -104,8 +104,8 @@ Public Class customer
                                           CM_Leader =    '" & Info_Tx5.Text & "',
                                           CM_Add =       '" & Info_Tx6.Text & "',
                                           CM_Man_Name =  '" & Info_Tx7.Text & "',
-                                          CM_Man_Email = '" & Info_Tx8.Text & "',
-                                          CM_Bigo =      '" & Info_Tx9.Text & "'
+                                          CM_Man_Email = '" & Info_Tx9.Text & "',
+                                          CM_Bigo =      '" & Info_Tx10.Text & "'
                                     WHERE CM_CODE ='" & Info_Tx0.Text & "'"
                 Re_Count = DB_Execute()
                 MsgBox("수정되었습니다")
