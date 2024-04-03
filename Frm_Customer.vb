@@ -47,9 +47,9 @@
         Customer_Grid.Columns(0).Width = 50
         '
         Customer_Grid.Columns(1).HeaderText = "업체명"
-        Customer_Grid.Columns(2).HeaderText = "지역"
-        Customer_Grid.Columns(3).HeaderText = "구분(매입/매출)"
-        Customer_Grid.Columns(4).HeaderText = "사업자번호"
+        Customer_Grid.Columns(2).HeaderText = "사업자번호"
+        Customer_Grid.Columns(3).HeaderText = "지역"
+        Customer_Grid.Columns(4).HeaderText = "구분(매입/매출)"
         Customer_Grid.Columns(5).HeaderText = "대표자"
         Customer_Grid.Columns(6).HeaderText = "주소"
         Customer_Grid.Columns(7).HeaderText = "담당자이름"

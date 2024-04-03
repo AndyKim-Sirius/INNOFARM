@@ -43,6 +43,7 @@ Public Class customer
                 Info_Tx5.Text = DBT.Rows(0)("CM_Leader")                  ' 대표자 이름
                 Info_Tx6.Text = DBT.Rows(0)("CM_Add")                     ' 주소
                 Info_Tx7.Text = DBT.Rows(0)("CM_Man_Name")                ' 담당자 이름
+                Info_Tx8.Text = DBT.Rows(0)("CM_Man_Tel")                 ' 담당자 전화
                 Info_Tx9.Text = DBT.Rows(0)("CM_Man_Email")               ' 담당자 이메일
                 Info_Tx10.Text = DBT.Rows(0)("CM_Bigo")                    ' 비고
             End If
@@ -73,15 +74,16 @@ Public Class customer
             Try
                 StrSQL = "SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED "
                 StrSQL = StrSQL & "Insert INTO SI_customer Values ('" & Info_Tx0.Text & "',
-                                                                   '" & Info_Tx1.Text & "', 
+                                                                   N'" & Info_Tx1.Text & "', 
                                                                    '" & Info_Tx2.Text & "', 
-                                                                   '" & ComboBox1.Text & "', 
-                                                                   '" & ComboBox2.Text & "',
-                                                                   '" & Info_Tx5.Text & "', 
-                                                                   '" & Info_Tx6.Text & "',
-                                                                   '" & Info_Tx7.Text & "', 
-                                                                   '" & Info_Tx9.Text & "', 
-                                                                   '" & Info_Tx10.Text & "')"
+                                                                   N'" & ComboBox1.Text & "', 
+                                                                   N'" & ComboBox2.Text & "',
+                                                                   N'" & Info_Tx5.Text & "', 
+                                                                   N'" & Info_Tx6.Text & "',
+                                                                   N'" & Info_Tx7.Text & "', 
+                                                                   N'" & Info_Tx8.Text & "', 
+                                                                   N'" & Info_Tx9.Text & "', 
+                                                                   N'" & Info_Tx10.Text & "')"
                 Re_Count = DB_Execute()
                 MsgBox("저장되었습니다")
             Catch ex As Exception
@@ -95,15 +97,15 @@ Public Class customer
             Try
                 StrSQL = "SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED "
                 StrSQL = StrSQL & "UPDATE SI_CUSTOMER
-                                      SET CM_NAME =      '" & Info_Tx1.Text & "',
+                                      SET CM_NAME =      N'" & Info_Tx1.Text & "',
                                           CM_Op_Number = '" & Info_Tx2.Text & "',
-                                          CM_JIGUBUN =   '" & ComboBox1.Text & "',
-                                          CM_SEL =       '" & ComboBox2.Text & "',
-                                          CM_Leader =    '" & Info_Tx5.Text & "',
-                                          CM_Add =       '" & Info_Tx6.Text & "',
-                                          CM_Man_Name =  '" & Info_Tx7.Text & "',
+                                          CM_JIGUBUN =   N'" & ComboBox1.Text & "',
+                                          CM_SEL =       N'" & ComboBox2.Text & "',
+                                          CM_Leader =    N'" & Info_Tx5.Text & "',
+                                          CM_Add =       N'" & Info_Tx6.Text & "',
+                                          CM_Man_Name =  N'" & Info_Tx7.Text & "',
                                           CM_Man_Email = '" & Info_Tx9.Text & "',
-                                          CM_Bigo =      '" & Info_Tx10.Text & "'
+                                          CM_Bigo =      N'" & Info_Tx10.Text & "'
                                     WHERE CM_CODE ='" & Info_Tx0.Text & "'"
                 Re_Count = DB_Execute()
                 MsgBox("수정되었습니다")
