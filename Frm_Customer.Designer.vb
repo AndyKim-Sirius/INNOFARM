@@ -22,6 +22,7 @@ Partial Class Frm_Customer
     '코드 편집기에서는 수정하지 마세요.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Customer_Grid = New System.Windows.Forms.DataGridView()
         Me.Di_Panel1 = New System.Windows.Forms.Panel()
         Me.Search_Text = New System.Windows.Forms.TextBox()
@@ -30,8 +31,8 @@ Partial Class Frm_Customer
         Me.Delete_Com = New System.Windows.Forms.Button()
         Me.Save_Com = New System.Windows.Forms.Button()
         Me.Panel_Menu = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Customer_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_Menu.SuspendLayout()
         Me.SuspendLayout()
@@ -41,6 +42,14 @@ Partial Class Frm_Customer
         Me.Customer_Grid.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("굴림", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Customer_Grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.Customer_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Customer_Grid.Location = New System.Drawing.Point(21, 101)
         Me.Customer_Grid.Name = "Customer_Grid"
@@ -69,6 +78,7 @@ Partial Class Frm_Customer
         'Search_Com
         '
         Me.Search_Com.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.Search_Com.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Search_Com.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Search_Com.ForeColor = System.Drawing.Color.Black
         Me.Search_Com.Location = New System.Drawing.Point(141, 8)
@@ -81,6 +91,7 @@ Partial Class Frm_Customer
         'Insert_Com
         '
         Me.Insert_Com.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.Insert_Com.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Insert_Com.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Insert_Com.Location = New System.Drawing.Point(246, 8)
         Me.Insert_Com.Name = "Insert_Com"
@@ -92,6 +103,7 @@ Partial Class Frm_Customer
         'Delete_Com
         '
         Me.Delete_Com.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.Delete_Com.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Delete_Com.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Delete_Com.Location = New System.Drawing.Point(350, 8)
         Me.Delete_Com.Name = "Delete_Com"
@@ -103,6 +115,7 @@ Partial Class Frm_Customer
         'Save_Com
         '
         Me.Save_Com.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.Save_Com.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Save_Com.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Save_Com.ForeColor = System.Drawing.Color.Black
         Me.Save_Com.Location = New System.Drawing.Point(663, 8)
@@ -128,22 +141,12 @@ Partial Class Frm_Customer
         Me.Panel_Menu.Size = New System.Drawing.Size(1506, 71)
         Me.Panel_Menu.TabIndex = 22
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Button1.Location = New System.Drawing.Point(559, 8)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(98, 54)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "거래처등록"
-        Me.Button1.UseVisualStyleBackColor = False
-        Me.Button1.Visible = False
-        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.Button2.Enabled = False
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Location = New System.Drawing.Point(12, 8)
@@ -152,6 +155,19 @@ Partial Class Frm_Customer
         Me.Button2.TabIndex = 26
         Me.Button2.Text = "거래처명"
         Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.Button1.Location = New System.Drawing.Point(559, 8)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(98, 54)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "거래처등록"
+        Me.Button1.UseVisualStyleBackColor = False
+        Me.Button1.Visible = False
         '
         'Frm_Customer
         '

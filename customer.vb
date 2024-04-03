@@ -5,8 +5,6 @@ Public Class customer
         Info_La0.Enabled = False
         Info_La1.Enabled = False
         Info_La2.Enabled = False
-        Info_La3.Enabled = False
-        Info_La4.Enabled = False
         Info_La5.Enabled = False
         Info_La6.Enabled = False
         Info_La7.Enabled = False
@@ -21,9 +19,9 @@ Public Class customer
             StrSQL = "Select CM_CODE FROM SI_CUSTOMER with(NOLOCK)  Order By Convert(Decimal,CM_CODE) Desc "
             Re_Count = DB_Select(DBT)
             If Re_Count = 0 Then
-                JP_Code = "0001"
+                JP_Code = "001"
             Else
-                JP_Code = Format(DBT.Rows(0).Item(0) + 1, "000#")
+                JP_Code = Format(DBT.Rows(0).Item(0) + 1, "00#")
             End If
 
             Info_Tx0.Text = JP_Code
@@ -40,8 +38,8 @@ Public Class customer
             Else
                 Info_Tx1.Text = DBT.Rows(0)("CM_Name")                    ' 거래처 명
                 Info_Tx2.Text = DBT.Rows(0)("CM_Op_Number")               ' 사업자 번호
-                Info_Tx3.Text = DBT.Rows(0)("CM_JIGUBUN")                 ' 지역 구분
-                Info_Tx4.Text = DBT.Rows(0)("CM_Sel")                     ' 매입 / 매출 구분
+                ComboBox1.Text = DBT.Rows(0)("CM_JIGUBUN")                 ' 지역 구분
+                ComboBox2.Text = DBT.Rows(0)("CM_Sel")                     ' 매입 / 매출 구분
                 Info_Tx5.Text = DBT.Rows(0)("CM_Leader")                  ' 대표자 이름
                 Info_Tx6.Text = DBT.Rows(0)("CM_Add")                     ' 주소
                 Info_Tx7.Text = DBT.Rows(0)("CM_Man_Name")                ' 담당자 이름
@@ -77,8 +75,8 @@ Public Class customer
                 StrSQL = StrSQL & "Insert INTO SI_customer Values ('" & Info_Tx0.Text & "',
                                                                    '" & Info_Tx1.Text & "', 
                                                                    '" & Info_Tx2.Text & "', 
-                                                                   '" & Info_Tx3.Text & "', 
-                                                                   '" & Info_Tx4.Text & "',
+                                                                   '" & ComboBox1.Text & "', 
+                                                                   '" & ComboBox2.Text & "',
                                                                    '" & Info_Tx5.Text & "', 
                                                                    '" & Info_Tx6.Text & "',
                                                                    '" & Info_Tx7.Text & "', 
@@ -99,8 +97,8 @@ Public Class customer
                 StrSQL = StrSQL & "UPDATE SI_CUSTOMER
                                       SET CM_NAME =      '" & Info_Tx1.Text & "',
                                           CM_Op_Number = '" & Info_Tx2.Text & "',
-                                          CM_JIGUBUN =   '" & Info_Tx3.Text & "',
-                                          CM_SEL =       '" & Info_Tx4.Text & "',
+                                          CM_JIGUBUN =   '" & ComboBox1.Text & "',
+                                          CM_SEL =       '" & ComboBox2.Text & "',
                                           CM_Leader =    '" & Info_Tx5.Text & "',
                                           CM_Add =       '" & Info_Tx6.Text & "',
                                           CM_Man_Name =  '" & Info_Tx7.Text & "',
@@ -121,4 +119,18 @@ Public Class customer
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+    Private Sub ComboBox1_Click(sender As Object, e As EventArgs) Handles ComboBox1.Click
+        ComboBox1.Items.Clear()
+        ComboBox1.Items.Add("서울")
+        ComboBox1.Items.Add("부산")
+        ComboBox1.Items.Add("광주")
+        ComboBox1.Items.Add("구리")
+    End Sub
+    Private Sub ComboBox2_Click(sender As Object, e As EventArgs) Handles ComboBox2.Click
+        ComboBox2.Items.Clear()
+        ComboBox2.Items.Add("매입")
+        ComboBox2.Items.Add("매출")
+    End Sub
+
 End Class

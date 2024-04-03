@@ -32,20 +32,20 @@
         Customer_Grid.EnableHeadersVisualStyles = False
         Customer_Grid.AllowUserToAddRows = False
         Customer_Grid.RowTemplate.Height = 20
-        Customer_Grid.ColumnCount = 14
+        Customer_Grid.ColumnCount = 11
         Customer_Grid.RowCount = 1
 
         '만약 헤더의 스타일을 조정하려면 아래 코드에 헤더를 추가한다.
-        Customer_Grid.Columns(0).DefaultCellStyle.Alignment = DataGridViewContentAlignment.BottomRight
         Customer_Grid.RowHeadersWidth = 45
         Customer_Grid.Columns(0).Width = 55
 
-        For i = 1 To Customer_Grid.ColumnCount - 1
-            Customer_Grid.Columns(i).Width = 100
-            Customer_Grid.Columns(i).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
-        Next i
-        Customer_Grid.Columns(11).Width = 450
+        ' For i = 0 To Customer_Grid.ColumnCount - 1
+        'Customer_Grid.Columns(i).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+        'Next i
+
         Customer_Grid.Columns(0).HeaderText = "코드"
+        Customer_Grid.Columns(0).Width = 50
+        '
         Customer_Grid.Columns(1).HeaderText = "업체명"
         Customer_Grid.Columns(2).HeaderText = "지역"
         Customer_Grid.Columns(3).HeaderText = "구분(매입/매출)"
