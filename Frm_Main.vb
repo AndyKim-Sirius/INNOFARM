@@ -228,6 +228,13 @@
             Exit Sub
         End If
 
+        If sender.text = "재배사현황" Then
+            DD = GetForm("INNOFARM", "Frm_Cultivation")
+            Panel_Main.Controls.Add(DD)
+            DD.BringToFront()
+            Exit Sub
+        End If
+
         Dim Form_Check As String
         Form_Check = ""
         For Each tt In Panel_Tab_Menu.Controls

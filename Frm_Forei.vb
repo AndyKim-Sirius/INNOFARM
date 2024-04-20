@@ -22,7 +22,7 @@ Public Class Frm_Forei
 
         Forei_Grid.AllowUserToAddRows = False
         Forei_Grid.RowTemplate.Height = 30
-        Forei_Grid.ColumnCount = 11
+        Forei_Grid.ColumnCount = 12
         Forei_Grid.RowCount = 1
 
 
@@ -35,34 +35,37 @@ Public Class Frm_Forei
         Forei_Grid.Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         Forei_Grid.Columns(2).Width = 30
         Forei_Grid.Columns(2).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        Forei_Grid.Columns(3).Width = 10
+        Forei_Grid.Columns(3).Width = 30
         Forei_Grid.Columns(3).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        Forei_Grid.Columns(4).Width = 50
-        Forei_Grid.Columns(4).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
-        Forei_Grid.Columns(5).Width = 20
-        Forei_Grid.Columns(5).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        Forei_Grid.Columns(6).Width = 15
+        Forei_Grid.Columns(4).Width = 10
+        Forei_Grid.Columns(4).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+        Forei_Grid.Columns(5).Width = 50
+        Forei_Grid.Columns(5).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+        Forei_Grid.Columns(6).Width = 20
         Forei_Grid.Columns(6).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        Forei_Grid.Columns(7).Width = 30
+        Forei_Grid.Columns(7).Width = 15
         Forei_Grid.Columns(7).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         Forei_Grid.Columns(8).Width = 30
         Forei_Grid.Columns(8).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        Forei_Grid.Columns(9).Width = 20
+        Forei_Grid.Columns(9).Width = 30
         Forei_Grid.Columns(9).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        Forei_Grid.Columns(10).Width = 250
-        Forei_Grid.Columns(10).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+        Forei_Grid.Columns(10).Width = 20
+        Forei_Grid.Columns(10).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+        Forei_Grid.Columns(11).Width = 200
+        Forei_Grid.Columns(11).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
 
         Forei_Grid.Columns(0).HeaderText = "코드"
         Forei_Grid.Columns(1).HeaderText = "한글이름"
         Forei_Grid.Columns(2).HeaderText = "영어이름"
-        Forei_Grid.Columns(3).HeaderText = "성별"
-        Forei_Grid.Columns(4).HeaderText = "여권이름"
-        Forei_Grid.Columns(5).HeaderText = "입사일자"
-        Forei_Grid.Columns(6).HeaderText = "기숙사번호"
-        Forei_Grid.Columns(7).HeaderText = "기숙사 비밀번호"
-        Forei_Grid.Columns(8).HeaderText = "국적"
-        Forei_Grid.Columns(9).HeaderText = "동거인"
-        Forei_Grid.Columns(10).HeaderText = "비  고"
+        Forei_Grid.Columns(3).HeaderText = "부서명"
+        Forei_Grid.Columns(4).HeaderText = "성별"
+        Forei_Grid.Columns(5).HeaderText = "여권이름"
+        Forei_Grid.Columns(6).HeaderText = "입사일자"
+        Forei_Grid.Columns(7).HeaderText = "기숙사번호"
+        Forei_Grid.Columns(8).HeaderText = "기숙사 비밀번호"
+        Forei_Grid.Columns(9).HeaderText = "국적"
+        Forei_Grid.Columns(10).HeaderText = "동거인"
+        Forei_Grid.Columns(11).HeaderText = "비  고"
 
         For i = 0 To Forei_Grid.ColumnCount - 1
             Forei_Grid.Columns(i).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
@@ -184,14 +187,15 @@ Public Class Frm_Forei
         ForeiForm.Info_Tx0.Text = Forei_Grid.Item(0, Forei_Grid_Row).Value
         ForeiForm.Info_Tx1.Text = Forei_Grid.Item(1, Forei_Grid_Row).Value
         ForeiForm.Info_Tx2.Text = Forei_Grid.Item(2, Forei_Grid_Row).Value
-        ForeiForm.ComboBox1.Text = Forei_Grid.Item(3, Forei_Grid_Row).Value
-        ForeiForm.Info_Tx3.Text = Forei_Grid.Item(4, Forei_Grid_Row).Value
-        ForeiForm.IN_Date.Text = Forei_Grid.Item(5, Forei_Grid_Row).Value
-        ForeiForm.Info_Tx4.Text = Forei_Grid.Item(6, Forei_Grid_Row).Value
-        ForeiForm.Info_Tx5.Text = Forei_Grid.Item(7, Forei_Grid_Row).Value
-        ForeiForm.ComboBox2.Text = Forei_Grid.Item(8, Forei_Grid_Row).Value
-        ForeiForm.Info_Tx6.Text = Forei_Grid.Item(9, Forei_Grid_Row).Value
-        ForeiForm.Info_Tx7.Text = Forei_Grid.Item(10, Forei_Grid_Row).Value
+        ForeiForm.ComboBox3.Text = Forei_Grid.Item(3, Forei_Grid_Row).Value
+        ForeiForm.ComboBox1.Text = Forei_Grid.Item(4, Forei_Grid_Row).Value
+        ForeiForm.Info_Tx3.Text = Forei_Grid.Item(5, Forei_Grid_Row).Value
+        ForeiForm.IN_Date.Text = Forei_Grid.Item(6, Forei_Grid_Row).Value
+        ForeiForm.Info_Tx4.Text = Forei_Grid.Item(7, Forei_Grid_Row).Value
+        ForeiForm.Info_Tx5.Text = Forei_Grid.Item(8, Forei_Grid_Row).Value
+        ForeiForm.ComboBox2.Text = Forei_Grid.Item(9, Forei_Grid_Row).Value
+        ForeiForm.Info_Tx6.Text = Forei_Grid.Item(10, Forei_Grid_Row).Value
+        ForeiForm.Info_Tx7.Text = Forei_Grid.Item(11, Forei_Grid_Row).Value
 
         ForeiForm.ShowDialog()
         If ForeiForm.DialogResult = DialogResult.OK Then

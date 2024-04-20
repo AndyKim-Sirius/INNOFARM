@@ -112,6 +112,12 @@
     <Compile Include="ForeiForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Culti_History.Designer.vb">
+      <DependentUpon>Culti_History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Culti_History.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_Customer.Designer.vb">
       <DependentUpon>Frm_Customer.vb</DependentUpon>
     </Compile>
@@ -160,8 +166,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Frm_Cultivation.Designer.vb">
+      <DependentUpon>Frm_Cultivation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Cultivation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Culti_History.resx">
+      <DependentUpon>Culti_History.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customer.resx">
       <DependentUpon>customer.vb</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +203,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Cultivation.resx">
+      <DependentUpon>Frm_Cultivation.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

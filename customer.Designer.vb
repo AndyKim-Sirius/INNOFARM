@@ -222,7 +222,6 @@ Partial Class customer
         Me.Info_Tx0.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Info_Tx0.Location = New System.Drawing.Point(170, 15)
         Me.Info_Tx0.Name = "Info_Tx0"
-        Me.Info_Tx0.ReadOnly = True
         Me.Info_Tx0.Size = New System.Drawing.Size(137, 25)
         Me.Info_Tx0.TabIndex = 1
         '

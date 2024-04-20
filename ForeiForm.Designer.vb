@@ -45,6 +45,12 @@ Partial Class ForeiForm
         Me.Info_Tx6 = New System.Windows.Forms.TextBox()
         Me.Info_Tx7 = New System.Windows.Forms.TextBox()
         Me.IN_Date = New System.Windows.Forms.TextBox()
+        Me.Info_La11 = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Info_La12 = New System.Windows.Forms.Button()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Info_La13 = New System.Windows.Forms.Button()
+        Me.Info_Tx8 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -63,7 +69,7 @@ Partial Class ForeiForm
         Me.Btn_Save.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Btn_Save.Font = New System.Drawing.Font("맑은 고딕", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Btn_Save.ForeColor = System.Drawing.Color.Black
-        Me.Btn_Save.Location = New System.Drawing.Point(37, 461)
+        Me.Btn_Save.Location = New System.Drawing.Point(37, 507)
         Me.Btn_Save.Name = "Btn_Save"
         Me.Btn_Save.Size = New System.Drawing.Size(707, 49)
         Me.Btn_Save.TabIndex = 252
@@ -317,11 +323,90 @@ Partial Class ForeiForm
         Me.IN_Date.TabIndex = 270
         Me.IN_Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Info_La11
+        '
+        Me.Info_La11.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.Info_La11.Enabled = False
+        Me.Info_La11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Info_La11.Font = New System.Drawing.Font("맑은 고딕", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.Info_La11.ForeColor = System.Drawing.Color.Black
+        Me.Info_La11.Location = New System.Drawing.Point(374, 124)
+        Me.Info_La11.Name = "Info_La11"
+        Me.Info_La11.Size = New System.Drawing.Size(153, 29)
+        Me.Info_La11.TabIndex = 271
+        Me.Info_La11.Text = "부  서"
+        Me.Info_La11.UseVisualStyleBackColor = False
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.DropDownHeight = 70
+        Me.ComboBox3.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.IntegralHeight = False
+        Me.ComboBox3.Location = New System.Drawing.Point(541, 126)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(137, 28)
+        Me.ComboBox3.TabIndex = 272
+        '
+        'Info_La12
+        '
+        Me.Info_La12.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.Info_La12.Enabled = False
+        Me.Info_La12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Info_La12.Font = New System.Drawing.Font("맑은 고딕", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.Info_La12.ForeColor = System.Drawing.Color.Black
+        Me.Info_La12.Location = New System.Drawing.Point(44, 461)
+        Me.Info_La12.Name = "Info_La12"
+        Me.Info_La12.Size = New System.Drawing.Size(153, 29)
+        Me.Info_La12.TabIndex = 273
+        Me.Info_La12.Text = "재직여부"
+        Me.Info_La12.UseVisualStyleBackColor = False
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.DropDownHeight = 50
+        Me.ComboBox4.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.IntegralHeight = False
+        Me.ComboBox4.Location = New System.Drawing.Point(203, 462)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(94, 28)
+        Me.ComboBox4.TabIndex = 274
+        '
+        'Info_La13
+        '
+        Me.Info_La13.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.Info_La13.Enabled = False
+        Me.Info_La13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Info_La13.Font = New System.Drawing.Font("맑은 고딕", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.Info_La13.ForeColor = System.Drawing.Color.Black
+        Me.Info_La13.Location = New System.Drawing.Point(374, 460)
+        Me.Info_La13.Name = "Info_La13"
+        Me.Info_La13.Size = New System.Drawing.Size(153, 29)
+        Me.Info_La13.TabIndex = 275
+        Me.Info_La13.Text = "퇴사 일자"
+        Me.Info_La13.UseVisualStyleBackColor = False
+        '
+        'Info_Tx8
+        '
+        Me.Info_Tx8.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.Info_Tx8.Location = New System.Drawing.Point(544, 462)
+        Me.Info_Tx8.Name = "Info_Tx8"
+        Me.Info_Tx8.Size = New System.Drawing.Size(137, 25)
+        Me.Info_Tx8.TabIndex = 276
+        Me.Info_Tx8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'ForeiForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(762, 522)
+        Me.ClientSize = New System.Drawing.Size(762, 566)
+        Me.Controls.Add(Me.Info_Tx8)
+        Me.Controls.Add(Me.Info_La13)
+        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.Info_La12)
+        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.Info_La11)
         Me.Controls.Add(Me.IN_Date)
         Me.Controls.Add(Me.Info_Tx7)
         Me.Controls.Add(Me.Info_Tx6)
@@ -374,4 +459,10 @@ Partial Class ForeiForm
     Friend WithEvents Info_Tx6 As TextBox
     Friend WithEvents Info_Tx7 As TextBox
     Friend WithEvents IN_Date As TextBox
+    Friend WithEvents Info_La11 As Button
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Info_La12 As Button
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Info_La13 As Button
+    Friend WithEvents Info_Tx8 As TextBox
 End Class

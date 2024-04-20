@@ -18,11 +18,11 @@ Public Class customer
             '번호자동생성
             StrSQL = "Select CM_CODE FROM SI_CUSTOMER with(NOLOCK)  Order By Convert(Decimal,CM_CODE) Desc "
             Re_Count = DB_Select(DBT)
-            If Re_Count = 0 Then
-                JP_Code = "001"
-            Else
-                JP_Code = Format(DBT.Rows(0).Item(0) + 1, "00#")
-            End If
+            'If Re_Count = 0 Then
+            'JP_Code = "001"
+            'Else
+            'JP_Code = Format(DBT.Rows(0).Item(0) + 1, "00#")
+            'End If
 
             Info_Tx0.Text = JP_Code
 
@@ -124,10 +124,16 @@ Public Class customer
 
     Private Sub ComboBox1_Click(sender As Object, e As EventArgs) Handles ComboBox1.Click
         ComboBox1.Items.Clear()
+        ComboBox1.Items.Add("강서")
         ComboBox1.Items.Add("서울")
-        ComboBox1.Items.Add("부산")
+        ComboBox1.Items.Add("경기")
+        ComboBox1.Items.Add("인천")
+        ComboBox1.Items.Add("대전")
         ComboBox1.Items.Add("광주")
-        ComboBox1.Items.Add("구리")
+        ComboBox1.Items.Add("대구,부산,경남")
+        ComboBox1.Items.Add("전남")
+        ComboBox1.Items.Add("기타")
+        ComboBox1.Items.Add("해외")
     End Sub
     Private Sub ComboBox2_Click(sender As Object, e As EventArgs) Handles ComboBox2.Click
         ComboBox2.Items.Clear()
